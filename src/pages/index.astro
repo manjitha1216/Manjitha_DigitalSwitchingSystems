@@ -35,6 +35,7 @@ import Card from '../components/Card.astro';
 		</svg>
 		<h1>Digital Switching Systems </h1>
 		<h2>Topics </h2>
+		<img src="https://www.cisco.com/c/dam/assets/swa/img/anchor-info/what-is-network-switching-628x353.png" alt="Image Description" style="float: right; margin-left: 20px;">
         <ul>
             <li>Operation of OSI second layer (Layer 2)</li>
             <li>Multilayer (MLS) switch</li>
@@ -50,12 +51,16 @@ import Card from '../components/Card.astro';
             <li>Network Security</li>
             <li>Foundations of Engineering if any gaps will be found</li>
         </ul>
+		<h2>My Personal Info</h2> <!-- Added section header -->
 		<ul role="list" class="link-card-grid">
 			<Card
 				href="https://github.com/manjitha1216"
-				title="My Personal Info"
+				title="Click here to check my GitHub profile"
 				body="Hello I'm Manjitha 🎓 Master's Student at Riga Technical University, Latvia 🌐 MSc. Telecommunication Technologies and Network Management 📚 Passionate about learning "
 			/>
+		</ul>
+		<h2>Homework Assignements</h2> <!-- Added section header for homework sections -->
+		<ul role="list" class="link-card-grid">
 			<Card
 				href="https://slides.com/manjithamanchanayake-1/minimal"
 				title="Homework 1"
@@ -84,11 +89,10 @@ import Card from '../components/Card.astro';
 	main {
 		margin: 0;
         padding: 0;
-		color: white;
+		color: rgb(0, 0, 0);
 		font-size: 20px;
 		line-height: 1.6;
-        background-image: url('https://www.lifewire.com/thmb/Vq4dHtR6iZOt7NIZV2mynvlUC6g=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-942583674-671175c03466468ba734c9f062321334.jpg');
-        background-color: rgb(0, 0, 0, 1);
+        background-color: rgb(255, 255, 255);
 		background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
@@ -134,10 +138,9 @@ import Card from '../components/Card.astro';
 	.instructions strong {
 		color: rgb(var(--accent-light));
 	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 2rem;
-		padding: 0;
+	.link-card {
+  		margin-bottom: 2rem; /* Adds spacing between cards */
 	}
 </style>
+
+  
