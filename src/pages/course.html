@@ -1,0 +1,24 @@
+---
+---
+<html lang="en">
+  <head>
+    <title>My Homepage</title>
+  </head>
+  <body>
+    <h1>Operation of OSI Second layer (Layer 2)</h1>
+    <h2>The second layer of the OSI (Open Systems Interconnection) model, also known as the Data Link Layer, is responsible for the reliable transmission of data over a physical medium. It primarily deals with the following tasks:</h2>
+    <ul>
+        <li>Frame Encapsulation -> The Data Link Layer takes the packets of data from the Network Layer (Layer 3) and encapsulates them into frames. These frames include both the data and control information necessary for transmission. The frame structure and format depend on the specific data link protocol being used, such as Ethernet, Wi-Fi (802.11), or PPP (Point-to-Point Protocol). </li>
+        <li>Physical addressing -> The layer adds a header to each frame that identifies the MAC addresses of the sender and receiver. MAC addresses are used to uniquely identify devices within the same local network segment.</li>
+        <li>Flow control -> The Data Link Layer can also implement flow control to manage the speed at which data is sent between devices. Flow control mechanisms help prevent buffer overflows and data loss due to congestion.</li>
+        <li>Error Control -> Data bits can get damaged or corrupted when traveling over a computer network due to difficulties such as network problems and network interferences. Layer 2 recognizes - and sometimes corrects - errors, including single bit errors and multiple-bit errors. Additionally, the data link layer determines where faults in the physical layer may occur.</li>
+    </ul>
+    <h2>Data link layer protocols</h2>
+    <u1>
+        <li>Synchronous Data Link Control (SDLC), which deals with error correction, error recovery, and multipoint link support</li>
+        <li>High-Level Data Link Control (HDLC), which supports point-to-point communication</li>
+        <li>Serial Line Interface Protocol (SLIP), which handles the transfer of IP packets</li>
+        <li>Point-to-Point Protocol (PPP), which transports IP packets</li>
+    </u1>
+  </body>
+</html>
