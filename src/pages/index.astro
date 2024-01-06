@@ -34,13 +34,14 @@ import Card from '../components/Card.astro';
 			</defs>
 		</svg>
 		<h1>Digital Switching Systems </h1>
+		<h3>Hello! Welcome to my website. I'm Manjitha Manchanayake from Riga Technical University, Latvia</h3>
 		<h2>Topics </h2>
 		<img src="https://www.cisco.com/c/dam/assets/swa/img/anchor-info/what-is-network-switching-628x353.png" alt="Image Description" style="float: right; margin-left: 20px;">
 		<ul>
-            <li><a href="course.html">OOOOperation of OSI Second layer (Layer 2) </a></li>
-			<li><a href="MLS.html">Multilayer (MLS) switch </a></li>
-            <li>Basic VLAN concepts</li>
-            <li>Inter VLAN communication through Layer 3 routing</li>
+            <li><a href="secondlayer.html">Operation of OSI Second layer (Layer 2) </a></li>
+			<li><a href="multilayerswitch.html">Multilayer (MLS) switch </a></li>
+            <li><a href="vlanbasix.html">Basic VLAN concepts</a></li>
+            <li><a href="intervlancommunication.html">Inter VLAN communication through Layer 3 routing</a></li>
             <li>Switch port aggregation with EtherChannel</li>
             <li>Spanning tree protocol (SPT)</li>
             <li>Multilayer switching with CEF</li>
@@ -102,60 +103,49 @@ import Card from '../components/Card.astro';
 
 <style>
 	main {
-		margin: 0;
-        padding: 0;
-		color: rgb(0, 0, 0);
-		font-size: 20px;
-		line-height: 1.6;
-        background-color: rgb(255, 255, 255);
-		background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
+	  margin: 0;
+	  padding: 20px; /* Add padding for better readability */
+	  color: #333;
+	  font-size: 20px;
+	  line-height: 1.6;
+	  background-color: #fff;
+	  background-size: cover;
+	  background-repeat: no-repeat;
+	  background-attachment: fixed;
 	}
+  
 	.astro-a {
-		position: absolute;
-		top: -32px;
-		left: 50%;
-		transform: translatex(-50%);
-		width: 220px;
-		height: auto;
-		z-index: -1;
+	  position: absolute;
+	  top: -32px;
+	  left: 50%;
+	  transform: translatex(-50%);
+	  width: 220px;
+	  height: auto;
+	  z-index: -1;
 	}
+  
 	h1 {
-		font-size: 4rem;
-		font-weight: 700;
-		line-height: 1;
-		text-align: center;
-		margin-bottom: 1em;
+	  font-size: 2.5rem; /* Adjust font size for better readability */
+	  font-weight: 700;
+	  line-height: 1;
+	  text-align: center;
+	  margin-bottom: 1em;
 	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		margin-bottom: 2rem;
-		border: 1px solid rgba(var(--accent-light), 25%);
-		background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
-		padding: 1.5rem;
-		border-radius: 8px;
-	}
-	.instructions code {
-		font-size: 0.8em;
-		font-weight: bold;
-		background: rgba(var(--accent-light), 12%);
-		color: rgb(var(--accent-light));
-		border-radius: 4px;
-		padding: 0.3em 0.4em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent-light));
+	h3 {
+		font-size: 1.5rem; /* Adjust font size for better readability */
+	  font-weight: 500;
+	  line-height: 1;
+	  text-align: center;
+	  margin-bottom: 1em;
 	}
 	.link-card {
-  		margin-bottom: 2rem; /* Adds spacing between cards */
+	  margin-bottom: 2rem;
+	  padding: 1.5rem;
+	  border-radius: 8px;
+	  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for better card separation */
 	}
-</style>
+  
+	/* Add additional styling as needed */
+  </style>
 
   

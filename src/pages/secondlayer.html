@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSI Layer Model and Layer 2 Switch Operation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>OSI Layer Model</h1>
+
+    <p>The OSI (Open Systems Interconnection) Layer Model is a conceptual framework used to understand and design computer networks. It consists of seven layers, each responsible for specific functions in the communication process:</p>
+    <ol>
+        <li>Physical Layer</li>
+        <li>Data Link Layer</li>
+        <li>Network Layer</li>
+        <li>Transport Layer</li>
+        <li>Session Layer</li>
+        <li>Presentation Layer</li>
+        <li>Application Layer</li>
+    </ol>
+    <img src="https://www.imperva.com/learn/wp-content/uploads/sites/13/2020/02/OSI-7-layers.jpg" >
+
+    <h2>Operation of OSI Layer 2 (Data Link Layer)</h2>
+
+    <p>The Data Link Layer (Layer 2) is responsible for reliable point-to-point and point-to-multipoint communication over the physical layer. It ensures the error-free transmission of frames between directly connected nodes. Let's explore the operation of Layer 2, focusing on the summary of Layer 2 Switch Operation:</p>
+
+    <p>The data link provides for the transfer of data frames between hosts connected to the physical link. Within the semantics of the OSI network architecture, the protocols of the data link layer respond to service requests from the network layer, and perform their function by issuing service requests to the physical layer. That transfer can be reliable or unreliable; many data link protocols do not have acknowledgments of successful frame reception and acceptance, and some data link protocols might not even perform any check for transmission errors. In those cases, higher-level protocols must provide flow control, error checking, acknowledgments, and retransmission. The frame header contains the source and destination addresses that indicate which device originated the frame and which device is expected to receive and process it. In contrast to the hierarchical and routable addresses of the network layer, layer 2 addresses are flat, meaning that no part of the address can be used to identify the logical or physical group to which the address belongs.</p>
+
+    <h2>Services:</h2>
+    <ul>
+        <li><strong>Frame Encapsulation:</strong> The Data Link Layer takes the packets of data from the Network Layer (Layer 3) and encapsulates them into frames. These frames include both the data and control information necessary for transmission. The frame structure and format depend on the specific data link protocol being used, such as Ethernet, Wi-Fi (802.11), or PPP (Point-to-Point Protocol).</li>
+        <li><strong>Physical addressing:</strong> The layer adds a header to each frame that identifies the MAC addresses of the sender and receiver. MAC addresses are used to uniquely identify devices within the same local network segment.</li>
+        <li><strong>Flow control:</strong> The Data Link Layer can also implement flow control to manage the speed at which data is sent between devices. Flow control mechanisms help prevent buffer overflows and data loss due to congestion.</li>
+        <li><strong>Error Control:</strong> Data bits can get damaged or corrupted when traveling over a computer network due to difficulties such as network problems and network interferences. Layer 2 recognizes - and sometimes corrects - errors, including single bit errors and multiple-bit errors. Additionally, the data link layer determines where faults in the physical layer may occur.</li>
+    </ul>
+
+    <h2>Data link layer protocols</h2>
+    <ul>
+        <li><strong>Synchronous Data Link Control (SDLC):</strong> Deals with error correction, error recovery, and multipoint link support.</li>
+        <li><strong>High-Level Data Link Control (HDLC):</strong> Supports point-to-point communication.</li>
+        <li><strong>Serial Line Interface Protocol (SLIP):</strong> Handles the transfer of IP packets.</li>
+        <li><strong>Point-to-Point Protocol (PPP):</strong> Transports IP packets.</li>
+    </ul>
+    <h2>Layer 2 Switch Operation</h2>
+    <p>Consider a simple network that is built around many hosts that all share the same available bandwidth. This is known as a shared media network and was used in early legacy LANs made up of Ethernet hubs. The carrier sense multiple access collision detect (CSMA/CD) scheme determines when a device can transmit data on the shared LAN. When more than one host tries to talk at one time, a collision occurs, and everyone must back off and wait to talk again. This forces every host to operate in half-duplex mode, by either talking or listening at any given time. In addition, when one host sends a frame, all connected hosts hear it. When one host generates a frame with errors, everyone hears that, too. This type of LAN is a collision domain because all device transmissions are susceptible to collisions. An Ethernet switch operates at OSI Layer 2, making decisions about forwarding frames based on the destination MAC addresses found within the frames. This means that the Ethernet media is no longer shared among connected devices. Instead, at its most basic level, an Ethernet switch provides isolation between connected hosts in several ways:</p>
+    <ol>
+        <li>The collision domain’s scope is severely limited. On each switch port, the collision domain consists of the switch port itself and the devices directly connected to that port—either a single host or, if a shared-media hub is connected, the set of hosts connected to the hub.</li>
+        <li>Host connections can operate in full-duplex mode because there is no contention on the media. Hosts can talk and listen at the same time.</li>
+        <li>Bandwidth is no longer shared. Instead, each switch port offers dedicated bandwidth across a switching fabric to another switch port. (These frame forwarding paths change dynamically.)</li>
+        <li>Errors in frames are not propagated. Each frame received on a switch port is checked for errors. Good frames are regenerated when they are forwarded or transmitted. This is known as store-and-forward switching technology: Packets are received, stored for inspection, and then forwarded.</li>    
+        <li>You can limit broadcast traffic to a volume threshold.</li>
+        <li>Other types of intelligent filtering or forwarding become possible.</li>
+    </ol>
+
+</body>
+</html>
