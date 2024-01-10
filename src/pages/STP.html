@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spanning Tree Protocol (STP)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Spanning Tree Protocol (STP)</h1>
+
+<p>
+    The Spanning Tree Protocol (STP) is a network protocol that ensures a loop-free topology for Ethernet networks.
+    Ethernet switches use STP to prevent loops in the network, which could lead to broadcast storms and degraded network
+    performance.
+</p>
+
+<p>
+    Key features of Spanning Tree Protocol:
+</p>
+
+<ul>
+    <li><strong>Loop Prevention:</strong> STP identifies and blocks redundant paths in the network, preventing loops from
+        forming.</li>
+    <li><strong>Root Bridge Election:</strong> STP elects a root bridge that becomes the reference point for the entire
+        network. All paths lead back to the root bridge.</li>
+    <li><strong>Port States:</strong> STP manages the state of ports in the network, including blocking, listening,
+        learning, and forwarding states.</li>
+    <li><strong>Redundancy:</strong> If a link or switch fails, STP reconverges to find an alternate path, ensuring
+        network continuity.</li>
+</ul>
+
+<p>
+    The process involves exchanging Bridge Protocol Data Units (BPDU) between switches to determine the topology and
+    establish the most efficient paths. STP uses a tree-like structure, with the root bridge at the top and branches
+    leading to other switches.
+</p>
+
+<p>
+    STP operates in the Data Link Layer (Layer 2) of the OSI model and is essential for building reliable and resilient
+    Ethernet networks.
+</p>
+
+<p>
+    Implementing and configuring STP correctly is crucial for maintaining a stable and efficient network infrastructure.
+    Network administrators should understand the STP process, port roles, and how to interpret STP information for
+    troubleshooting.
+</p>
+
+</body>
+</html>

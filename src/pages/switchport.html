@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Port Aggregation with EtherChannel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Switch Port Aggregation with EtherChannel</h1>
+
+<p>
+    Switch port aggregation, also known as EtherChannel or port-channel, is a technology that allows multiple physical
+    Ethernet links to be combined into a single logical link. This provides increased bandwidth, improved redundancy, and
+    load balancing across the aggregated links.
+</p>
+
+<p>
+    EtherChannel is commonly used in network environments where high availability and increased bandwidth are essential.
+    The process involves grouping multiple physical ports on a switch to act as a single logical interface. This logical
+    interface can then be connected to another switch or network device that also supports EtherChannel.
+</p>
+
+<p>
+    Key points about Switch Port Aggregation with EtherChannel:
+</p>
+
+<ul>
+    <li>Enhanced Bandwidth: Aggregating multiple links increases the overall bandwidth between switches.</li>
+    <li>Redundancy: If one physical link fails, traffic is automatically redirected to the remaining links in the
+        EtherChannel, ensuring continuous connectivity.</li>
+    <li>Load Balancing: EtherChannel distributes traffic across the member links, preventing congestion on a single link
+        and optimizing network performance.</li>
+    <li>Configuration: EtherChannel can be configured using various protocols, such as Port Aggregation Protocol (PAgP),
+        Link Aggregation Control Protocol (LACP), or static configuration.</li>
+</ul>
+
+<p>
+    The configuration involves selecting the physical ports, specifying the EtherChannel protocol, and configuring the
+    logical interface with an IP address if used for routing purposes.
+</p>
+
+<p>
+    Switch port aggregation simplifies network management, increases fault tolerance, and optimizes resource utilization,
+    making it a valuable feature in modern networking environments.
+</p>
+
+</body>
+</html>
